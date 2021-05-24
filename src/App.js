@@ -18,7 +18,7 @@ const App = () => {
 	// marker position useEffect
 	useEffect(() => {
 		const socket = io(
-			'http://tarea-3-websocket.2021-1.tallerdeintegracion.cl',
+			'wss://tarea-3-websocket.2021-1.tallerdeintegracion.cl',
 			{
 				path: '/flights',
 				transports: ['websocket']
