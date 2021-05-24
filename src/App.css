@@ -1,0 +1,111 @@
+.App {
+	text-align: center;
+	display: flex;
+	/* justify-content:stretch; */
+	padding: 5%;
+}
+h2 {
+	text-align: left;
+}
+#flight-data {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+.leaflet-container {
+	width: 100%;
+	height: 60vh;
+	border: 3px solid teal;
+	border-radius: 15px;
+	box-shadow: 2px 2px 8px black;
+}
+#flight-information {
+	margin: 2% 0%;
+	padding: 5%;
+	border: 3px solid teal;
+	border-radius: 15px;
+	background-color: white;
+}
+.button {
+	padding: 5px 15px;
+	border-radius: 20px;
+	background-color: teal;
+	color: white;
+}
+.grid {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+.info-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 25px;
+	border-radius: 20px;
+	margin: 8px;
+	border: 1px solid black;
+	background-color: white;
+	box-shadow: 2px 3px 4px black;
+	transition: 0.2s ease-in-out;
+}
+.info-card:hover {
+	border: 1px solid teal;
+	box-shadow: 2px 2px 3px teal;
+}
+#chat-control {
+	margin: 0% 2%;
+	width: 300px;
+}
+#chat-block {
+	background-color: white;
+	height: 60vh;
+	border: 3px solid teal;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#all-messages{
+	overflow-y: scroll;
+	overflow-x:hidden;
+}
+#all-messages > .input-text {
+	width: 80%;
+}
+.message {
+	margin: 5px;
+	padding: 10px;
+	width: 90%;
+	border-radius: 16px;
+	background-color: rgb(156, 156, 156);
+}
+.sender-info {
+	display: flex;
+	justify-content: space-between;
+}
+.msg-text {
+	text-align: left;
+	margin-top: 5px;
+}
+#message-sending-box {
+	display: flex;
+	margin: 5px;
+}
+.input-text {
+	width: 100%;
+	border-radius: 20px;
+	height: 20px;
+	padding: 5px;
+	outline: none;
+}
+
+@media (max-width: 768px) {
+	.App {
+		display: block;
+	}
+	#chat-control {
+		margin: 0%;
+		width: 100%;
+	}
+}
