@@ -1,3 +1,3 @@
 # Para correr en local
 
-### `yarn start`
+#### `npm install`
